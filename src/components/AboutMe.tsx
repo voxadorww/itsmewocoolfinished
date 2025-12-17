@@ -8,7 +8,11 @@ const tabs = [
     label: "Overview",
     icon: Building2,
     title: "About Me",
-    content: "I’m ItsMe_WoCool, a frontpage Roblox builder and modeler specializing in high-quality, production-ready builds. I work with developers and studios to turn concepts into clean, optimized creations that are designed for real gameplay and long-term use.\nWith a strong focus on reliability, versatility, and performance, I handle everything from detailed showcase builds to large-scale game maps. My workflow emphasizes clarity, efficiency, and polish, ensuring each build meets professional standards and integrates smoothly into active development.\n\n\n If you’re looking for a builder who understands both creative vision and technical execution, I deliver consistent results, clear communication, and dependable timelines.",
+    content: `I'm ItsMe_WoCool, a frontpage Roblox builder and modeler specializing in high-quality, production-ready builds. I work with developers and studios to turn concepts into clean, optimized creations that are designed for real gameplay and long-term use.
+
+With a strong focus on reliability, versatility, and performance, I handle everything from detailed showcase builds to large-scale game maps. My workflow emphasizes clarity, efficiency, and polish, ensuring each build meets professional standards and integrates smoothly into active development.
+
+If you're looking for a builder who understands both creative vision and technical execution, I deliver consistent results, clear communication, and dependable timelines.`,
   }
 ];
 
