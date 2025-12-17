@@ -27,7 +27,7 @@ export function Hero({ featuredProjects = [] }: HeroProps) {
             className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary">Roblox Builder & Developer</span>
+            <span className="text-sm text-primary">Frontpage Roblox Builder & Modeler</span>
           </motion.div>
 
           <motion.h1
@@ -45,7 +45,7 @@ export function Hero({ featuredProjects = [] }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl"
           >
-            Crafting immersive worlds and experiences in Roblox. Professional builds that bring your vision to life.
+            Looking for a top-notch, reliable, experienced, and frontpage builder for your next project? I'm the guy for you!
           </motion.p>
 
           <motion.div
@@ -55,7 +55,7 @@ export function Hero({ featuredProjects = [] }: HeroProps) {
             className="flex items-center justify-center lg:justify-start gap-4"
           >
             <Building2 className="w-6 h-6 text-primary" />
-            <span className="text-base text-foreground/80">Specialized in detailed environments & gameplay systems</span>
+            <span className="text-base text-foreground/80">Specialized in Roblox Studio Building & Versatility, Blender Modelling, Optimal & Creativity, and more!</span>
           </motion.div>
         </div>
 
