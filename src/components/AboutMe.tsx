@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import { Building2, Palette, Code, Lightbulb, Award } from "lucide-react";
+import { Building2, Award } from "lucide-react";
 
 const tabs = [
   {
@@ -76,23 +76,18 @@ export function AboutMe() {
             </div>
           </motion.div>
 
-          {/* Tabs Section */}
+          {/* Tab Content Section */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            {/* Tab Navigation */}
+            {/* Only the primary tab button (Overview) */}
             <div className="mb-6">
-              {/* Primary Tab (Overview) */}
               <motion.button
                 onClick={() => setActiveTab("overview")}
-                className={`w-full mb-3 px-6 py-4 rounded-xl border-2 transition-all duration-300 ${
-                  activeTab === "overview"
-                    ? "bg-gradient-to-r from-primary to-accent border-primary text-black"
-                    : "bg-card/40 border-primary/20 hover:border-primary/40"
-                }`}
+                className="w-full mb-3 px-6 py-4 rounded-xl border-2 transition-all duration-300 bg-gradient-to-r from-primary to-accent border-primary text-black"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -101,41 +96,6 @@ export function AboutMe() {
                   <span className="font-bold">Overview</span>
                 </div>
               </motion.button>
-
-              {/* Secondary Tabs Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {tabs.slice(1).map((tab) => {
-                  const Icon = tab.icon;
-                  return (
-                    <motion.button
-                      key={tab.id}
-                      onClick={() => setActiveTab(tab.id)}
-                      className={`px-4 py-3 rounded-xl border-2 transition-all duration-300 ${
-                        activeTab === tab.id
-                          ? "bg-gradient-to-br from-primary/20 to-accent/20 border-primary"
-                          : "bg-card/40 border-primary/20 hover:border-primary/40"
-                      }`}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <div className="flex flex-col items-center gap-2">
-                        <Icon
-                          className={`w-5 h-5 ${
-                            activeTab === tab.id ? "text-primary" : "text-muted-foreground"
-                          }`}
-                        />
-                        <span
-                          className={`text-xs font-medium ${
-                            activeTab === tab.id ? "text-foreground" : "text-muted-foreground"
-                          }`}
-                        >
-                          {tab.label}
-                        </span>
-                      </div>
-                    </motion.button>
-                  );
-                })}
-              </div>
             </div>
 
             {/* Tab Content */}
@@ -157,59 +117,25 @@ export function AboutMe() {
                   <h3 className="text-2xl font-bold">{activeTabData.title}</h3>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed text-base">
+                <p className="text-muted-foreground leading-relaxed text-base whitespace-pre-line">
                   {activeTabData.content}
                 </p>
 
-                {/* Stats or additional info based on tab */}
-                {activeTab === "overview" && (
-                  <div className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-primary/20">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">5+</div>
-                      <div className="text-xs text-muted-foreground">Years Experience</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">250+</div>
-                      <div className="text-xs text-muted-foreground">Projects Completed</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">100%</div>
-                      <div className="text-xs text-muted-foreground">Client Satisfaction</div>
-                    </div>
+                {/* Stats section */}
+                <div className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-primary/20">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary mb-1">5+</div>
+                    <div className="text-xs text-muted-foreground">Years Experience</div>
                   </div>
-                )}
-
-                {activeTab === "building" && (
-                  <div className="mt-6 pt-6 border-t border-primary/20">
-                    <h4 className="font-bold mb-3 text-sm text-primary">Specializations:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {["Environment Design", "Lighting", "Terrain", "Architecture", "Custom Assets"].map((skill) => (
-                        <span
-                          key={skill}
-                          className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary mb-1">250+</div>
+                    <div className="text-xs text-muted-foreground">Projects Completed</div>
                   </div>
-                )}
-
-                {activeTab === "scripting" && (
-                  <div className="mt-6 pt-6 border-t border-primary/20">
-                    <h4 className="font-bold mb-3 text-sm text-primary">Technical Skills:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {["Lua", "Game Mechanics", "UI Systems", "Data Management", "Performance Optimization"].map((skill) => (
-                        <span
-                          key={skill}
-                          className="px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-xs"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                    <div className="text-xs text-muted-foreground">Client Satisfaction</div>
                   </div>
-                )}
+                </div>
               </div>
             </motion.div>
           </motion.div>
