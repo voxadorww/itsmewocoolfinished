@@ -22,6 +22,9 @@ export function AboutMe() {
   const activeTabData = tabs.find((tab) => tab.id === activeTab) || tabs[0];
   const ActiveIcon = activeTabData.icon;
 
+  // Convert newlines to <br /> tags
+  const contentWithBreaks = activeTabData.content.replace(/\n/g, '<br />');
+
   return (
     <section className="relative py-20 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
@@ -117,9 +120,11 @@ export function AboutMe() {
                   <h3 className="text-2xl font-bold">{activeTabData.title}</h3>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed text-base whitespace-pre">
-                  {activeTabData.content}
-                </p>
+                {/* Fixed: Using dangerouslySetInnerHTML to render <br /> tags */}
+                <div 
+                  className="text-muted-foreground leading-relaxed text-base"
+                  dangerouslySetInnerHTML={{ __html: contentWithBreaks }}
+                />
 
                 {/* Stats section */}
                 <div className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-primary/20">
