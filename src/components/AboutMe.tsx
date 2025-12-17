@@ -9,35 +9,7 @@ const tabs = [
     icon: Building2,
     title: "About Me",
     content: "I’m ItsMe_WoCool, a frontpage Roblox builder and modeler specializing in high-quality, production-ready builds. I work with developers and studios to turn concepts into clean, optimized creations that are designed for real gameplay and long-term use.\nWith a strong focus on reliability, versatility, and performance, I handle everything from detailed showcase builds to large-scale game maps. My workflow emphasizes clarity, efficiency, and polish, ensuring each build meets professional standards and integrates smoothly into active development.\n\n\n If you’re looking for a builder who understands both creative vision and technical execution, I deliver consistent results, clear communication, and dependable timelines.",
-  },
-  {
-    id: "building",
-    label: "Building",
-    icon: Palette,
-    title: "Building & Design",
-    content: "I specialize in creating detailed environments, from realistic cityscapes to fantasy worlds. My building style combines modern techniques with artistic vision, utilizing advanced lighting, terrain manipulation, and custom textures. I'm proficient in both Studio tools and external modeling software to deliver professional-grade builds.",
-  },
-  {
-    id: "scripting",
-    label: "Scripting",
-    icon: Code,
-    title: "Scripting & Systems",
-    content: "Proficient in Lua scripting for Roblox, I develop complex gameplay systems, UI interactions, and optimization scripts. From creating smooth animations to implementing advanced game mechanics, I ensure every system is efficient, scalable, and bug-free. I also specialize in data management and server-client architecture.",
-  },
-  {
-    id: "creativity",
-    label: "Creative Vision",
-    icon: Lightbulb,
-    title: "Creative Process",
-    content: "Every project starts with understanding the vision and goals. I brainstorm concepts, create mood boards, and develop prototypes to ensure alignment. My creative process involves iterative design, incorporating feedback, and refining details until perfection. I believe great builds tell a story and create memorable experiences.",
-  },
-  {
-    id: "achievements",
-    label: "Achievements",
-    icon: Award,
-    title: "My Achievements",
-    content: "Successfully completed numerous high-profile commissions and collaborative projects. Known for delivering quality work on time and exceeding client expectations. Experienced in working with teams, managing large-scale builds, and mentoring aspiring builders. My portfolio showcases diverse projects ranging from showcases to full game environments.",
-  },
+  }
 ];
 
 export function AboutMe() {
