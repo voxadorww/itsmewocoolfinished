@@ -117,7 +117,7 @@ export function AboutMe() {
                   <h3 className="text-2xl font-bold">{activeTabData.title}</h3>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed text-base whitespace-pre-line">
+                <p className="text-muted-foreground leading-relaxed text-base whitespace-pre">
                   {activeTabData.content}
                 </p>
 
