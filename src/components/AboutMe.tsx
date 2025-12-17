@@ -58,7 +58,7 @@ export function AboutMe() {
         >
           <h2 className="text-4xl md:text-5xl gradient-text mb-4">About Me</h2>
           <p className="text-muted-foreground text-lg">
-            Professional Roblox Builder & Developer
+            Frontpage Roblox Builder & Modeler
           </p>
         </motion.div>
 
@@ -86,7 +86,7 @@ export function AboutMe() {
               />
               <div className="relative w-48 h-48 rounded-full border-4 border-primary/30 overflow-hidden bg-card">
                 <img
-                  src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=400&h=400&fit=crop"
+                  src="https://media.discordapp.net/attachments/1450504080341602314/1450849846532772003/Untitled_design_18.png?ex=694408b6&is=6942b736&hm=d14c2fafc4b5cd9a5d666780c5c51d52d10b650d047db9056e7a208f4094fee9&=&format=webp&quality=lossless&width=684&height=968"
                   alt="ItsMe_WoCool Profile"
                   className="w-full h-full object-cover"
                 />
