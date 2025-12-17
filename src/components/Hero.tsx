@@ -45,7 +45,7 @@ export function Hero({ featuredProjects = [] }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl"
           >
-            Looking for a top-notch, reliable, experienced, and frontpage builder for your next project? I'm the guy for you!
+            Looking for a top-notch, reliable, experienced, and frontpage builder for your next project? I got you!
           </motion.p>
 
           <motion.div
