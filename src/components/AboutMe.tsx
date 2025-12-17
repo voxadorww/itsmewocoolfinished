@@ -8,7 +8,7 @@ const tabs = [
     label: "Overview",
     icon: Building2,
     title: "About Me",
-    content: "Hey! I'm ItsMe_WoCool, a passionate Roblox builder dedicated to creating immersive and visually stunning experiences. With years of experience in building and scripting, I transform ideas into reality. My work focuses on attention to detail, optimized performance, and creative design that pushes the boundaries of what's possible in Roblox.",
+    content: "I’m ItsMe_WoCool, a frontpage Roblox builder and modeler specializing in high-quality, production-ready builds. I work with developers and studios to turn concepts into clean, optimized creations that are designed for real gameplay and long-term use.\nWith a strong focus on reliability, versatility, and performance, I handle everything from detailed showcase builds to large-scale game maps. My workflow emphasizes clarity, efficiency, and polish, ensuring each build meets professional standards and integrates smoothly into active development.\nIf you’re looking for a builder who understands both creative vision and technical execution, I deliver consistent results, clear communication, and dependable timelines.",
   },
   {
     id: "building",
@@ -193,7 +193,7 @@ export function AboutMe() {
                       <div className="text-xs text-muted-foreground">Years Experience</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">50+</div>
+                      <div className="text-2xl font-bold text-primary mb-1">250+</div>
                       <div className="text-xs text-muted-foreground">Projects Completed</div>
                     </div>
                     <div className="text-center">
